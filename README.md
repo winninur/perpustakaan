@@ -3,59 +3,6 @@
 > **Projek UTS Pemrograman Web Tingkat Mahir** - Kelompok AF
 > Aplikasi web berbasis Laravel 12 untuk mengelola buku, kategori, anggota, peminjaman, dan pengembalian.
 
----
-
-## 🚀 QUICKSTART WINDOWS (XAMPP + VSCode)
-
-> **Lihat [QUICKSTART_WINDOWS.md](QUICKSTART_WINDOWS.md) untuk panduan lengkap.**
-
-**Intinya cuma 5 command ini, copy-paste ke PowerShell satu-satu:**
-
-```powershell
-composer install
-copy .env.example .env
-php artisan key:generate
-php artisan migrate:fresh --seed
-php artisan serve
-```
-
-Lalu buka browser → **http://localhost:8000** → login `admin@perpus.id / admin123`.
-
-### ⚠️ Kenapa "Semua Merah" di VSCode?
-
-Itu **BUKAN error kode**. Itu karena folder `vendor/` belum dibuat. Setelah kamu jalankan `composer install` (command #1), semua tanda merah di VSCode akan **hilang otomatis**.
-
-### ⚠️ Sebelum jalanin 5 command di atas, PASTIKAN:
-
-1. **Composer terinstall** → cek: `composer --version`
-   - Kalau error: download dari https://getcomposer.org/download/
-2. **MySQL jalan di XAMPP** → buka XAMPP Control Panel, klik Start MySQL
-3. **Database sudah dibuat** → http://localhost/phpmyadmin → buat database `db_perpustakaan`
-4. **Cek environment** → jalankan: `php check.php` (akan otomatis cek semua)
-
-> Kalau masih bermasalah, lihat:
-> - **[QUICKSTART_WINDOWS.md](QUICKSTART_WINDOWS.md)** — panduan super simpel Windows
-> - **[PANDUAN_WINDOWS.md](PANDUAN_WINDOWS.md)** — panduan lengkap Windows + troubleshooting
-> - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** — solusi 15+ error umum
-
----
-
-## Daftar Isi
-
-1. [Deskripsi Aplikasi](#deskripsi-aplikasi)
-2. [Fitur Utama](#fitur-utama)
-3. [Role & Hak Akses](#role--hak-akses)
-4. [Tabel Database](#tabel-database)
-5. [Instalasi](#instalasi)
-6. [Konfigurasi Database via phpMyAdmin](#konfigurasi-database-via-phpmyadmin)
-7. [Akun Default](#akun-default)
-8. [Struktur Folder](#struktur-folder)
-9. [Pengujian Minimal](#pengujian-minimal)
-10. [Panduan Windows (XAMPP)](PANDUAN_WINDOWS.md)
-11. [Troubleshooting](TROUBLESHOOTING.md)
-
----
-
 ## Deskripsi Aplikasi
 
 **SIP (Sistem Informasi Perpustakaan)** adalah aplikasi web yang dibangun menggunakan Laravel 12, MySQL, Blade template, dan Bootstrap 5 (template SB Admin 2). Aplikasi ini dirancang untuk mempermudah pengelolaan aktivitas perpustakaan, mulai dari pencatatan koleksi buku, kategori, data anggota, hingga transaksi peminjaman dan pengembalian.
